@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Hello World JSF</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #635f5f;
+        }
+        .center-text {
+            color: black;
+            font-size: 24px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+            display: inline-block;
+            margin: 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 660px;
+        }
+        input {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</h:head>
+<h:body>
+    
+    <div class="container">
+        <h:form>
+            <h:inputText class="box" value="#{numberleBean.numbersInput[0]}" />
+            <h:inputText class="box" value="#{numberleBean.numbersInput[1]}" />
+            <h:inputText class="box" value="#{numberleBean.numbersInput[2]}" />
+            <h:inputText class="box" value="#{numberleBean.numbersInput[3]}" />
+            <h:inputText class="box" value="#{numberleBean.numbersInput[4]}" />
+            <h:inputText class="box" value="#{numberleBean.numbersInput[5]}" />
+            <h:commandButton value="Submit" action="#{numberleBean.compareUserInput}" />
+            <h:outputText value="#{numberleBean.comparisonResult}" />
+        </h:form> 
+    </div>   
+     
+    <!-- Display the selected number from the NumberleBean -->
+    <!-- <h1>Selected number: #{numberleBean.message}</h1> -->
+    <!-- Alternative using JSF outputText -->
+    <!-- <h:outputText value="#{numberleBean.message}" /> -->
+</h:body>
+</html>
+
+
+
+
+
+
