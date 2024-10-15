@@ -75,6 +75,7 @@ public class NumberleBean implements Serializable{
         
         // Loop through each character and compare
         // TESTTTT
+        // test to see if git works
         for (int i = 0; i < charArray.length; i++) {
             if (numbersInput[i] != null && !numbersInput[i].isEmpty()) {
                 char inputChar = numbersInput[i].charAt(0);  // Assuming each numbersInput[i] is a single character string
